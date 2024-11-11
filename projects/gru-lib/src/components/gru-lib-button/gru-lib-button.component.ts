@@ -8,5 +8,5 @@ import {Component, Input} from '@angular/core';
   styleUrl: './gru-lib-button.component.scss'
 })
 export class GruLibButtonComponent {
- @Input() label?: string;
+ @Input() label?: string = 'Button';
 }

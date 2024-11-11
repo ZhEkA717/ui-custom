@@ -4,9 +4,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "Gru-lib": [
-        "./dist/gru-lib"
-      ]
+      "@gru-lib/src/*": ["./projects/gru-lib/src/*"],
+      "@gru-lib/src/": ["./projects/gru-lib/src/"]
     },
     "outDir": "./dist/out-tsc",
     "strict": true,

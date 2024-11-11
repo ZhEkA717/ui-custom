@@ -92,7 +92,7 @@
         }
       }
     },
-    "Gru-lib": {
+    "@gru-lib/src": {
       "projectType": "library",
       "root": "projects/gru-lib",
       "sourceRoot": "projects/gru-lib/src",

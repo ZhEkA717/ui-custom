@@ -7,7 +7,11 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": []
+    "types": [],
+    "paths": {
+      "@gru-lib/src/*": ["./projects/gru-lib/src/*"],
+      "@gru-lib/src/": ["./projects/gru-lib/src/"],
+    }
   },
   "exclude": [
     "**/*.spec.ts"
