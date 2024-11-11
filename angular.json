@@ -91,6 +91,39 @@
           }
         }
       }
+    },
+    "Gru-lib": {
+      "projectType": "library",
+      "root": "projects/gru-lib",
+      "sourceRoot": "projects/gru-lib/src",
+      "prefix": "",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/gru-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/gru-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/gru-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/gru-lib/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
